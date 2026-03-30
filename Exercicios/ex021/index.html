@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalizando Links</title> 
+    <style> 
+
+        /* SELETORES PERSONALIZADOS
+        #  =  id
+        .  =  class
+        :  =  pseudo-class
+        :: =  psudedo-element
+        >  = clildren (filho)
+        */
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+
+        } 
+        a {
+            color:red;
+            text-decoration: none;
+            font-weight: bold ;
+        }
+        a:visited {
+            color: rgb(192, 145, 145);
+        }
+        a:hover {
+            color: black;
+           text-decoration: underline;
+        }
+
+        .especial {
+            background-color: rgb(206, 7, 7);
+            
+        }
+            
+    
+
+        .especial::before {
+            content: '→';
+        }
+        .especial::after {
+            content: '←';
+        }
+            
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+<ul>
+    <li><a href="https://github.com/gustavoguanabara" target="_blank">GitHub</a></li>
+    <li><a href="https://www.youtube.com/" target="_blank" class="especial">Canal do Youtube</a></li>
+    <li><a href="https://estudante.estacio.br/disciplinas" target="_blank" class="especial">Faculdade</a></li>
+
+</ul>
+    
+</body>
+</html>
