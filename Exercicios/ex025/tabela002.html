@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas Grandes</title>
+
+    <style>
+        body {
+        font-family: Arial, Helvetica, sans-serif;
+
+        table {
+
+            width: 500px;
+            
+            border-collapse: collapse;
+             }
+            td, th {
+                    border: 1px solid black;
+                    padding: 10px;
+            }
+
+            thead, tfoot {
+                background-color: gray;
+                color: white;
+            }
+    
+            td.num {
+                text-align: right;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+
+    <!--ANATOMIA PARA TABELAS GRANDES
+    Table
+        Thead (cabeça)
+            TR, TD, TH
+
+        Tbody (corpo)
+            TR, TD, TH
+
+        Tfoot (pé)
+            TR, TD, TH
+       -->
+
+    <table>
+        <thead>
+            <tr> <!--primeira linha-->
+                <th>Estado</th>
+                <th>População</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr> <!--segunda linha-->
+                <td>São paulo</td>
+                <td class="num">11 451 999</td>
+            </tr>
+
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">6 211 223</td>
+            </tr>
+
+            <tr>
+                <td>Brasília</td>
+                <td class="num">2 817 381</td>
+            </tr>
+             
+            <tr>
+                <td>Fortaleza</td>
+                <td class="num">2 428 708</td>
+            </tr>
+
+            <tr>
+                <td>Salvador</td>
+                <td class="num">2 417 678</td>
+            </tr>
+
+            <tr> 
+                <td>Belo Horizonte</td>
+                <td class="num">2 315 560</td>
+            </tr>
+            
+            <tr>
+                <td>Manaus</td>
+                <td class="num">2 063 689</td>
+            </tr>
+
+            <tr>
+                <td>Porto Alegre</td>
+                <td class="num">1 332 845</td>
+            </tr>
+
+            <tr>
+                <td>Belém</td>
+                <td class="num">1 303 403</td>
+            </tr>
+
+            <tr>
+                <td>Maceió</td>
+                <td class="num">957 916</td>
+            </tr>
+
+            <tr>
+                <td>João Pessoa</td>
+                <td class="num">833 932</td>
+            </tr>
+
+             <tr>
+                <td>Londrina</td>
+                <td class="num">555 965</td>
+            </tr>
+
+            <tr>
+                <td>Florianópolis</td>
+                <td class="num">537 211</td>
+            </tr>
+
+        </tbody>
+
+        <tfoot>
+            <tr> <!--terceira linha-->
+                <th>Total de Habitantes</th>   
+                <td class="num"> <strong>35.227.510</strong></td>
+            </tr>
+        </tfoot>
+
+    </table>
+
+</body>
+</html>
